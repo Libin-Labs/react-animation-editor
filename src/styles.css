@@ -1,0 +1,61 @@
+.lpa-editor {
+  --lpa-accent: #3859c7;
+  font:
+    14px system-ui,
+    sans-serif;
+  color: #17213a;
+  max-width: 760px;
+}
+.lpa-editor fieldset {
+  border: 1px solid #bac3d5;
+  border-radius: 6px;
+  margin: 8px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.lpa-editor label {
+  display: grid;
+  gap: 4px;
+  margin: 4px;
+}
+.lpa-editor input,
+.lpa-editor select,
+.lpa-editor button,
+.lpa-editor textarea {
+  font: inherit;
+  padding: 6px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.lpa-editor input {
+  width: 150px;
+}
+.lpa-editor textarea {
+  width: 100%;
+}
+.lpa-editor button {
+  cursor: pointer;
+  margin: 4px;
+}
+.lpa-editor :focus-visible {
+  outline: 2px solid var(--lpa-accent);
+  outline-offset: 2px;
+}
+.lpa-editor .lpa-preview {
+  min-height: 100px;
+  overflow: hidden;
+  background: #edf0f7;
+  padding: 20px;
+}
+.lpa-editor .lpa-target {
+  width: 70px;
+  padding: 12px;
+  background: var(--lpa-accent);
+  color: white;
+}
+@media (prefers-reduced-motion: reduce) {
+  .lpa-editor .lpa-target {
+    animation: none !important;
+  }
+}
